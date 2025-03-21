@@ -1,0 +1,1 @@
+python3 ./src/hot_reload.py ./src/main.py
