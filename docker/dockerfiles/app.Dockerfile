@@ -12,9 +12,9 @@ ENV PYTHONUNBUFFERED 1
 ENV PIP_ROOT_USER_ACTION ignore
 
 # Install system dependencies needed for grpc and protobuf
-RUN apt-get update && apt-get install -y \
-    protobuf-compiler \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update && apt-get install -y \
+#     protobuf-compiler \
+#     && rm -rf /var/lib/apt/lists/*
 
 
 # Set the working directory for subsequent commands
