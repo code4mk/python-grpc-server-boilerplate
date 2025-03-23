@@ -12,7 +12,7 @@ This is well strcutured python grpc server boilerplate.
 ### package install with pipenv
 
 > [!NOTE]  
-> you need to ensure that you have python 3.12+ installed on your machine and pipenv installed
+> you need to ensure that you have python `3.12+` installed on your machine and `pipenv` installed
 
 ```bash
 pipenv shell
@@ -30,5 +30,5 @@ this will run grpc server on port 50051
 
 ### docs
 
-* [dockerize docs](_docs/docker.md)
-* [proto docs](_docs/proto.md)
+* [dockerize script docs](_docs/docker.md)
+* [protobuf to proto script docs](_docs/proto-buff.md)
