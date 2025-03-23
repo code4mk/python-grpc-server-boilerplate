@@ -1,6 +1,5 @@
 import logging
 import signal
-import sys
 from the_grpc.server import GRPCServer
 from proto import hello_pb2_grpc
 from services.greeter import Greeter

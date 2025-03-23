@@ -1,6 +1,6 @@
 from concurrent import futures
-
 import grpc
+#from .interceptors import AuthorizationInterceptor
 
 class GRPCServer(object):
 
@@ -11,7 +11,11 @@ class GRPCServer(object):
     def __init__(self, address='[::]', port=50051):
         self.__address = address
         self.__port = port
-        self.__server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
+        interceptors = [] # [AuthorizationInterceptor()]
+        self.__server = grpc.server(
+            futures.ThreadPoolExecutor(max_workers=10),
+            interceptors=interceptors
+        )
 
     def serve(self):
         endpoint = f'{self.__address}:{str(self.__port)}'

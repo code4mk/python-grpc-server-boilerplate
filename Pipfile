@@ -8,6 +8,7 @@ grpcio = "*"
 grpcio-tools = "*"
 protobuf = "*"
 watchdog = "*"
+python-jose = "*"
 
 [dev-packages]
 
