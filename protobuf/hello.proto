@@ -10,7 +10,7 @@ service Greeter {
 
 // Request message
 message HelloRequest {
-  string name = 1;
+  optional string name = 1;
 }
 
 // Response message

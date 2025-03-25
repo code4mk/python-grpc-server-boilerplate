@@ -19,8 +19,7 @@ class GRPCServer(object):
     def serve(self):
         endpoint = f'{self.__address}:{str(self.__port)}'
 
-        print(f'Started GRPC Server at {endpoint}')
-        print('Serving...')
+        print(f"🚀 gRPC Server Running on {endpoint}")
 
         self.__server.add_insecure_port(endpoint)
         self.__server.start()

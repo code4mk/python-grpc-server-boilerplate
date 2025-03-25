@@ -11,4 +11,6 @@ class Greeter(hello_pb2_grpc.GreeterServicer):
         print(f"Is authenticated: {is_authenticated}")
         print(f"User data: {auth_user_data}")
         
-        return hello_pb2.HelloResponse(message=f"Hello mr/ms , {request.name}!")
+        # Handle case where name is None or empty
+        name = request.name if request.name else "Guest"
+        return hello_pb2.HelloResponse(message=f"Hello mr/ms, {name}!")
