@@ -6,6 +6,7 @@ This is well strcutured python grpc server boilerplate.
 * dockerized
 * interceptors for authentication
 * proto generate script (protobuf to proto generate)
+* `hot reload support` ***
 
 ## Run project steps
 
